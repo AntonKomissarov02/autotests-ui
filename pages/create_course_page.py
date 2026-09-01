@@ -103,7 +103,7 @@ class CreateCoursePage(BasePage):
             description: str,
             max_score: str,
             min_score: str
-    ):
+    ) -> object:
         expect(self.create_course_title_input).to_be_visible()
         expect(self.create_course_title_input).to_have_value(title)
 
